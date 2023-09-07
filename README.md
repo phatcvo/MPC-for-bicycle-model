@@ -80,10 +80,9 @@ So,
 
 $$z_{k+1} = Az_k+Bu_k +C$$
 
-where,
+where
 
-$$A = (I + dtA')
-=
+$$A = (I + dt A') =
 \begin{bmatrix} 
 1 & 0 & cos(\bar{\phi})dt & -\bar{v}sin(\bar{\phi})dt\\
 0 & 1 & sin(\bar{\phi})dt & \bar{v}cos(\bar{\phi})dt \\
@@ -91,8 +90,7 @@ $$A = (I + dtA')
 0 & 0 &\frac{tan(\bar{\delta})}{L}dt & 1 \\
 \end{bmatrix}$$
 
-$$B = dtB'
-=
+$$B = dt B' =
 \begin{bmatrix} 
 0 & 0 \\
 0 & 0 \\
@@ -100,31 +98,24 @@ dt & 0 \\
 0 & \frac{\bar{v}}{Lcos^2(\bar{\delta})}dt \\
 \end{bmatrix}$$
 
-$$
-C = (f(\bar{z},\bar{u})-A'\bar{z}-B'\bar{u})dt\\
-= dt(
-\begin{bmatrix} 
+
+$$ C = (f(\bar{z},\bar{u})-A'\bar{z}-B'\bar{u})dt\\
+B'\bar{u})dt\\
+= dt(\begin{bmatrix} 
 \bar{v}cos(\bar{\phi})\\
 \bar{v}sin(\bar{\phi}) \\
 \bar{a}\\
 \frac{\bar{v}tan(\bar{\delta})}{L}\\
-\end{bmatrix}
--
+\end{bmatrix} - 
 \begin{bmatrix} 
 \bar{v}cos(\bar{\phi})-\bar{v}sin(\bar{\phi})\bar{\phi}\\
 \bar{v}sin(\bar{\phi})+\bar{v}cos(\bar{\phi})\bar{\phi}\\
 0\\
 \frac{\bar{v}tan(\bar{\delta})}{L}\\
-\end{bmatrix}
--
-\begin{bmatrix} 
-0\\
-0 \\
-\bar{a}\\
+\end{bmatrix} -
+\begin{bmatrix} 0\\ 0\\ \bar{a}\\
 \frac{\bar{v}\bar{\delta}}{Lcos^2(\bar{\delta})}\\
-\end{bmatrix}
-)
-=
+\end{bmatrix}) =
 \begin{bmatrix} 
 \bar{v}sin(\bar{\phi})\bar{\phi}dt\\
 -\bar{v}cos(\bar{\phi})\bar{\phi}dt\\
