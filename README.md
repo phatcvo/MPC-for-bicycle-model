@@ -53,18 +53,31 @@ $$ u = [a, \delta]$$
 x: x-position; y:y-position; v:velocity; φ: yaw angle; a: accellation; δ: steering angle
 
 The MPC cotroller minimize this cost function for path tracking:
+
 $$J = min\ Q_f(z_{T,ref}-z_{T})^2+Q\Sigma({z_{t,ref}-z_{t}})^2+R\Sigma{u_t}^2+R_d\Sigma({u_{t+1}-u_{t}})^2$$
+
 z_ref come from target path and speed.
 subject to:
 - Linearlied vehicle model
+  
   $$z_{t+1}=Az_t+Bu+C$$
+  
 - Maximum steering speed
+  
   $$|u_{t+1}-u_{t}|<du_{max}$$
+  
 - Maximum steering angle
+  
   $$|u_{t}|<u_{max}$$
+  
 - Initial state
+  
   $$z_0 = z_{0,ob}$$
+  
 - Maximum and minimum speed
+  
   $$v_{min} < v_t < v_{max}$$
-- Maximum and minimum input
-  $$u_{min} < u_t < u_{max}$$
+  
+- 
+  
+  $$u_{min} < u_t < u_{max}$$ Maximum and minimum input
