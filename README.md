@@ -153,3 +153,9 @@ subject to:
  $$|u_{t+1}-u_{t}| < du_{max}$$
  
  $$|u_{t}| < u_{max}$$
+
+ ## Reference
+
+- [Vehicle Dynamics and Control \| Rajesh Rajamani \| Springer](http://www.springer.com/us/book/9781461414322)
+
+- [MPC Course Material \- MPC Lab @ UC\-Berkeley](http://www.mpc.berkeley.edu/mpc-course-material)
