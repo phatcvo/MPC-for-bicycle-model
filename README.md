@@ -12,6 +12,14 @@ $$ \dot{v} = a$$
 
 $$ \dot{\phi} = \frac{vtan(\delta)}{L}$$
 
+State and Input vector:
+
+$$ z = [x, y, v,\phi] $$
+
+$$u = [a, \delta]$$
+
+x: x-position; y:y-position; v:velocity; φ: yaw angle; a: accellation; δ: steering angle
+
 ODE is 
 
 $$ \dot{z} =\frac{\partial }{\partial z} z = f(z, u) = A'z+B'u$$
@@ -124,16 +132,9 @@ B'\bar{u})dt\\
 \end{bmatrix}
 $$
 
-## MPC modeling
-State and Input vector:
+## MPC approach:
 
-$$ z = [x, y, v,\phi] $$
-
-$$u = [a, \delta]$$
-
-x: x-position; y:y-position; v:velocity; φ: yaw angle; a: accellation; δ: steering angle
-
-The MPC cotroller minimize this cost function for path tracking:
+The cost function:
 
 $$J = min\ Q_f(z_{T,ref}-z_{T})^2+Q\Sigma({z_{t,ref}-z_{t}})^2+R\Sigma{u_t}^2+R_d\Sigma({u_{t+1}-u_{t}})^2$$
 
