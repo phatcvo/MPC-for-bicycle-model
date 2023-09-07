@@ -70,8 +70,7 @@ subject to:
 
  $$u_{min} < u_t < u_{max}$$
 
- $$u_{t+1}-u_{t}$$
 
  $$|u_{t+1}-u_{t}| < du_{max}$$
  
- $$|u_{t}|<u_{max}$$
+ $$|u_{t}| < u_{max}$$
