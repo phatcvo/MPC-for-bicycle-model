@@ -63,17 +63,15 @@ z_ref come from target path and speed.
 subject to:
 - Linearlied vehicle model
 
-
-  $$z_{t+1}=Az_t+Bu+C$$
-
+$$z_{t+1}=Az_t+Bu+C$$
   
 - Maximum steering speed
-  
-  $$|u_{t+1}-u_{t}|<du_{max}$$
+
+$$|u_{t+1}-u_{t}|<du_{max}$$
   
 - Maximum steering angle
   
-  $$|u_{t}|<u_{max}$$
+$$|u_{t}|<u_{max}$$
   
 - Initial state
   
