@@ -67,4 +67,5 @@ subject to:
  $$z_0 = z_{0,ob}$$
   
  $$v_{min} < v_t < v_{max}$$
-  
+
+ $$v$$
