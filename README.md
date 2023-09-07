@@ -61,26 +61,15 @@ $$J = min\ Q_f(z_{T,ref}-z_{T})^2+Q\Sigma({z_{t,ref}-z_{t}})^2+R\Sigma{u_t}^2+R_
 
 z_ref come from target path and speed.
 subject to:
-- Linearlied vehicle model
 
  $$z_{t+1}=Az_t+Bu+C$$
   
-- Initial state
+ $$z_0 = z_{0,ob}$$
   
-  $$z_0 = z_{0,ob}$$
+ $$v_{min} < v_t < v_{max}$$
   
-- Maximum and minimum speed
+ $$ u_{min} < u_t < u_{max}$$
   
-  $$v_{min} < v_t < v_{max} \\ u_{min} < u_t < u_{max}$$
-  
-- Maximum and minimum input
-  
-  $$$$
-
-- Maximum steering speed
-
  $$|u_{t+1}-u_{t}|<du_{max}$$
-  
-- Maximum steering angle
   
  $$|u_{t}|<u_{max}$$
