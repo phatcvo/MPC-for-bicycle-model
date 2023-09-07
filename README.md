@@ -3,9 +3,13 @@ This code uses [CVXPY](http://www.cvxpy.org/) as an optimization modeling tool
 
 ### Vehicle model linearization
 Vehicle model is 
+
 $$ \dot{x} = vcos(\phi)$$
+
 $$ \dot{y} = vsin((\phi)$$
+
 $$ \dot{v} = a$$
+
 $$ \dot{\phi} = \frac{vtan(\delta)}{L}$$
 
 ODE is $$ \dot{z} =\frac{\partial }{\partial z} z = f(z, u) = A'z+B'u$$
