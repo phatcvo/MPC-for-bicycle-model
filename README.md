@@ -46,6 +46,28 @@ $$ A' =
 \end{bmatrix}
 $$
 
+$$
+B' =
+\begin{bmatrix}
+\frac{\partial }{\partial a}vcos(\phi) &
+\frac{\partial }{\partial \delta}vcos(\phi)\\
+\frac{\partial }{\partial a}vsin(\phi) &
+\frac{\partial }{\partial \delta}vsin(\phi)\\
+\frac{\partial }{\partial a}a &
+\frac{\partial }{\partial \delta}a\\
+\frac{\partial }{\partial a}\frac{vtan(\delta)}{L} &
+\frac{\partial }{\partial \delta}\frac{vtan(\delta)}{L}\\
+\end{bmatrix}
+　=
+\begin{bmatrix}
+0 & 0 \\
+0 & 0 \\
+1 & 0 \\
+0 & \frac{\bar{v}}{Lcos^2(\bar{\delta})} \\
+\end{bmatrix}
+$$
+
+
 ### MPC modeling
 State and Input vector:
 
