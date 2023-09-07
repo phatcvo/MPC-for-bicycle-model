@@ -48,8 +48,10 @@ $$
 
 ### MPC modeling
 State and Input vector:
-$$ z = [x, y, v,\phi]$$
-$$ u = [a, \delta]$$
+
+$$ z = [x, y, v,\phi] \\ 
+u = [a, \delta]$$
+
 x: x-position; y:y-position; v:velocity; φ: yaw angle; a: accellation; δ: steering angle
 
 The MPC cotroller minimize this cost function for path tracking:
@@ -78,6 +80,6 @@ subject to:
   
   $$v_{min} < v_t < v_{max}$$
   
-- 
+- Maximum and minimum input
   
-  $$u_{min} < u_t < u_{max}$$ Maximum and minimum input
+  $$u_{min} < u_t < u_{max}$$ 
