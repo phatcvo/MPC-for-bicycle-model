@@ -69,40 +69,36 @@ $$
 
 You can get a discrete-time mode with Forward Euler Discretization with sampling time dt.
 
-$$z_{k+1}=z_k+f(z_k,u_k)dt$$
+$$z_{k+1} = z_k+f(z_k,u_k)dt$$
 
 Using first degree Tayer expantion around zbar and ubar
-$$z_{k+1}=z_k+(f(\bar{z},\bar{u})+A'z_k+B'u_k-A'\bar{z}-B'\bar{u})dt$$
+$$z_{k+1} = z_k+(f(\bar{z},\bar{u})+A'z_k+B'u_k-A'\bar{z}-B'\bar{u})dt$$
 
-$$z_{k+1}=(I + dtA')z_k+(dtB')u_k + (f(\bar{z},\bar{u})-A'\bar{z}-B'\bar{u})dt$$
+$$z_{k+1} = (I + dtA')z_k+(dtB')u_k + (f(\bar{z},\bar{u})-A'\bar{z}-B'\bar{u})dt$$
 
 So, 
 
-$$z_{k+1}=Az_k+Bu_k +C$$
+$$z_{k+1} = Az_k+Bu_k +C$$
 
 where,
 
-$$
-A = (I + dtA')
+$$A = (I + dtA')
 =
 \begin{bmatrix} 
 1 & 0 & cos(\bar{\phi})dt & -\bar{v}sin(\bar{\phi})dt\\
 0 & 1 & sin(\bar{\phi})dt & \bar{v}cos(\bar{\phi})dt \\
 0 & 0 & 1 & 0 \\
 0 & 0 &\frac{tan(\bar{\delta})}{L}dt & 1 \\
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 
-$$
-B = dtB'
+$$B = dtB'
 =
 \begin{bmatrix} 
 0 & 0 \\
 0 & 0 \\
 dt & 0 \\
 0 & \frac{\bar{v}}{Lcos^2(\bar{\delta})}dt \\
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 
 $$
 C = (f(\bar{z},\bar{u})-A'\bar{z}-B'\bar{u})dt\\
