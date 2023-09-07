@@ -12,8 +12,12 @@ $$ \dot{v} = a$$
 
 $$ \dot{\phi} = \frac{vtan(\delta)}{L}$$
 
-ODE is $$ \dot{z} =\frac{\partial }{\partial z} z = f(z, u) = A'z+B'u$$
+ODE is 
+
+$$ \dot{z} =\frac{\partial }{\partial z} z = f(z, u) = A'z+B'u$$
+
 where
+
 $$ A' =
 \begin{bmatrix}
 \frac{\partial }{\partial x}vcos(\phi) & 
