@@ -71,11 +71,11 @@ subject to:
   
 - Maximum and minimum speed
   
-  $$v_{min} < v_t < v_{max}$$
+  $$v_{min} < v_t < v_{max} \\ u_{min} < u_t < u_{max}$$
   
 - Maximum and minimum input
   
-  $$u_{min} < u_t < u_{max}$$
+  $$$$
 
 - Maximum steering speed
 
