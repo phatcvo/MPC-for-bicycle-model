@@ -1,9 +1,6 @@
-This is a path tracking simulation using model predictive control (MPC).
-
 The MPC controller controls vehicle speed and steering base on linealized model.
 
 This code uses cvxpy as an optimization modeling tool.
-
 - [Welcome to CVXPY 1\.0 — CVXPY 1\.0\.6 documentation](http://www.cvxpy.org/)
 
 ### MPC modeling
