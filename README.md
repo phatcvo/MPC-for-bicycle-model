@@ -14,11 +14,11 @@ $$ \dot{\phi} = \frac{vtan(\delta)}{L}$$
 
 State and Input vector:
 
-$$ z = [x, y, v,\phi] $$
+$$ z = [x\\ y\\ v\\ \phi] $$
 
-$$u = [a, \delta]$$
+$$u = [a\\ \delta]$$
 
-x: x-position; y:y-position; v:velocity; φ: yaw angle; a: accellation; δ: steering angle
+x: x-position; y:y-position; v:velocity; φ: yaw angle; a: acceleration; δ: steering angle
 
 ODE is 
 
