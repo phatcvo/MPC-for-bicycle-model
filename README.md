@@ -144,7 +144,7 @@ The cost function:
 
 $$J = min\ Q_f(z_{T,ref}-z_{T})^2+Q\Sigma({z_{t,ref}-z_{t}})^2+R\Sigma{u_t}^2+R_d\Sigma({u_{t+1}-u_{t}})^2$$
 
-z_ref come from target path and speed.
+z_ref comes from the target path and speed.
 subject to:
 
  $$z_{t+1}=Az_t+Bu+C$$
