@@ -1,4 +1,4 @@
-The MPC controller controls vehicle speed and steering base on linealized model.
+The MPC controller controls vehicle speed and steering based on a linearized model.
 This code uses [CVXPY](http://www.cvxpy.org/) as an optimization modeling tool 
 
 ## Vehicle model linearization
@@ -25,7 +25,7 @@ a\\
 \delta
 \end{bmatrix} $$
 
-x: x-position; y:y-position; v:velocity; φ: yaw angle; a: acceleration; δ: steering angle
+$$x: x-position; y:y-position; v:velocity; \phi: yaw angle; a: acceleration; \delta: steering angle $$
 
 ODE is 
 
@@ -86,7 +86,7 @@ You can get a discrete-time mode with Forward Euler Discretization with sampling
 
 $$z_{k+1} = z_k+f(z_k,u_k)dt$$
 
-Using first degree Tayer expantion around zbar and ubar
+Using first-degree Tayer expansion around zbar and ubar
 $$z_{k+1} = z_k+(f(\bar{z},\bar{u})+A'z_k+B'u_k-A'\bar{z}-B'\bar{u})dt$$
 
 $$z_{k+1} = (I + dtA')z_k+(dtB')u_k + (f(\bar{z},\bar{u})-A'\bar{z}-B'\bar{u})dt$$
@@ -115,7 +115,6 @@ dt & 0 \\
 
 
 $$ C = (f(\bar{z},\bar{u})-A'\bar{z}-B'\bar{u})dt\\
-B'\bar{u})dt\\
 = dt(\begin{bmatrix} 
 \bar{v}cos(\bar{\phi})\\
 \bar{v}sin(\bar{\phi}) \\
