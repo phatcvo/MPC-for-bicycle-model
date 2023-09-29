@@ -14,9 +14,9 @@ $$ \dot{\phi} = \frac{vtan(\delta)}{L}$$
 
 State and Input vector:
 
-$$ z = [x\\ y\\ v\\ \phi] $$
+$$ z = \begin{bmatrix}x\\ y\\ v\\ \phi\end{bmatrix} $$
 
-$$u = [a\\ \delta]$$
+$$u = \begin{bmatrix}a\\ \delta\end{bmatrix}$$
 
 x: x-position; y:y-position; v:velocity; φ: yaw angle; a: acceleration; δ: steering angle
 
